@@ -1,4 +1,126 @@
-h1 {
-  font-size: 100px;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif, "돋움", "굴림";
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+  /* background-color: red; */
+  z-index: 100;
+}
+
+.logo {
+  width: 130px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ffffff;
   text-align: center;
+  line-height: 38px;
+  color: #ffffff;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.nav a.active,
+.nav a:hover {
+  background: #ffffff;
+  color: #333333;
+}
+
+/* slide */
+.slide {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(131, 131, 116, 0) 44.94%,
+      #191f1c 99.85%
+    ),
+    url(./images/slide_01.jpg), #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slide-text h1 {
+  color: #ffffff;
+  font-size: 84px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 114px;
+  margin-bottom: 36px;
+}
+
+.slide-text p {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22px;
+  opacity: 60%;
+}
+
+.social {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.social a {
+  display: block;
+  width: 40px;
+  margin: 30px;
+  opacity: 60%;
+}
+
+.social a:hover {
+  opacity: 100%;
 }
